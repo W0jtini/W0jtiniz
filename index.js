@@ -1,32 +1,3 @@
-/*
-  ptoszek.pl
-  Powered by Jaczup
-
-  My version (ptoszek.pl): 
-  - https://github.com/jaczup/ptoszek.pl
-  Original version (theannoyingsite.com): 
-  - https://github.com/feross/TheAnnoyingSite.com/
-
-  VERIFY THAT YOU ARE DEFINITELY CONTACTING ME! MANY PEOPLE TRY TO IMPERSONATE ME.
-
-  My official social media I use:
-    - YouTube: @jaczup
-    - TikTok: @jaczup_app
-    - Discord: jaczup
-    - Twitter: @jaczup
-    - E-mail: contact@jaczup.me
-
-  Contributors:
-    @jaczup - https://github.com/jaczup
-    @intexpression - https://github.com/intexpression
-    @dan64iel - https://github.com/dan64iel
-    @imzeme - https://github.com/imzeme
-	@GameShoot8050 - https://github.com/GameShoot8050
-    @wetraks -  https://github.com/wetraks
-    @cryblanka - https://github.com/cryblanka
-
-*/
-
 const SCREEN_WIDTH = window.screen.availWidth
 const SCREEN_HEIGHT = window.screen.availHeight
 const WIN_WIDTH = 480
@@ -65,27 +36,15 @@ const ART = [
 ]
 
 const SEARCHES = [
-  'jshop',
-  'ptoszek',
-  'ptak',
+  'W0jtini',
+  'Jaczup #2 Lepszy W0jtini',
+  '',
   'kanarek',
   'jaczup'
 ]
 
 const VIDEOS = [
-  'media/videos/jaczup.mp4',
-  'media/videos/duck.mp4',
-  'media/videos/rickroll.mp4',
-  'media/videos/golomb.mp4',
-  'media/videos/mushbox.mp4',
-  'media/videos/clearmax.mp4',
-  'media/videos/freestrona.mp4',
-  'media/videos/ajhsdfhjasdbhfjasdfs.mp4',
-  'media/videos/v09044g40000cgr968jc77u1t2krb89g.mov',
-  'media/videos/intro.mp4',
-  'media/videos/szybkakaczka.mp4', // added by @dan64iel
-  'media/videos/kaczuszka.mp4', //added by @imzeme
-  'media/videos/gratulacje.mp4' //added by @GameShoot8050
+  'files/media/gratulacje.mp4'
 ]
 
 const FILE_DOWNLOADS = [
@@ -102,14 +61,9 @@ const FILE_DOWNLOADS = [
 ]
 
 const PHRASES = [
-  'hello my name is ptoszek, lol',
-  'birds are funny lalalalalalalallalala',
-  'wgl co u cb bo u mn dbr',
-  'knuuurrr eksplozja',
-  'hee haw hee haw hee haw hee haw hee haw hee haw hee haw hee haw hee haw hee haw hee haw',
-  'abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz',
-  'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaak',
-  'eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo'
+  'Strona przez wojtiniego',
+  'Akurat potwierdzam że to nie virus. Żart! To też nie prawda bo robie to w Prima Aprilis. A to też żart bo to jest 4 dni pózniej. Więc to nie jest virus',
+  'Ptoszek #2 Ale to jest podobne do tego.'
 ]
 
 const LOGOUT_SITES = {
