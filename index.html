@@ -1,30 +1,9 @@
-<!--
-    ptoszek.pl
-    Powered by Jaczup
-
-    My version (ptoszek.pl): 
-    - https://github.com/jaczup/ptoszek.pl
-    Original version (theannoyingsite.com): 
-    - https://github.com/feross/TheAnnoyingSite.com/
-
-    VERIFY THAT YOU ARE DEFINITELY CONTACTING ME! MANY PEOPLE TRY TO IMPERSONATE ME.
-
-    My official social media I use:
-      - YouTube: @jaczup
-      - TikTok: @jaczup_app
-      - Discord: jaczup
-      - Twitter: @jaczup
-      - E-mail: contact@jaczup.me
-    
-    Contributors:
-      @jaczup - https://github.com/jaczup
--->
 <!doctype html>
 <html>
 <head>
-  <title>Ptoszek</title>
+  <title>W0jtiniz Clicker</title>
   <meta charset='UTF-8'>
-    <style>
+  <style>
     html, body {
       width: 100%;
       height: 100%;
@@ -33,10 +12,19 @@
         'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial,
         sans-serif;
       overflow: hidden;
+      background-image: url('https://wallpapercave.com/wp/wp7667538.jpg');
+      /* You can also use background color instead of an image */
+      /* background-color: #f0f0f0; */
+      background-size: cover; /* Adjusts the background image to cover the entire container */
+      background-repeat: no-repeat; /* Prevents the background image from repeating */
     }
     .hello-message {
-      margin: 40px;
+      margin: auto;
       text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
     .logout-messages {
       pointer-events: none;
@@ -49,6 +37,8 @@
     }
     img {
       width: 300px;
+      display: block;
+      margin: 0 auto; /* Centers the image horizontally */
     }
     @keyframes blurslowly {
       0% {
@@ -84,29 +74,17 @@
 </head>
 <body>
 
-<noscript>Po coś tego JavaScript wyłączył bamboszu!</noscript>
+<noscript>Serio JavaScript wyłączyć?</noscript>
 <template>
   <div class='hello-message'>
-    <h1>Siemano kolano!</h1>
-    <h2>We no walnij 3 razy w spacje.</h2>
-    <h3>(albo kliknij w ptoszka)</h3>
-
-    <img src='media/images/intro.gif' alt='Cute ptok' />
+    <h1>Witamy W W0jtiniz Clicker</h1>
+    <h2>(Kliknij Spacje Albo Ciastko)</h2>
+    <img src='https://media.giphy.com/media/l0u0eiVkW4x0Y/200.gif' alt='Cute Cookie'/>
   </div>
   <div class='logout-messages'></div>
 </template>
 
 <script src='index.js'></script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6S5388LRGM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6S5388LRGM');
-</script>
 
 </body>
 </html>
