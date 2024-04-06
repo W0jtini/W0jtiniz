@@ -104,7 +104,7 @@ const wins = []
 /**
  * Count of number of clicks
  */
-let interactionCount = 10
+let interactionCount = 0
 
 /**
  * Number of iframes injected into the page for the "super logout" functionality.
