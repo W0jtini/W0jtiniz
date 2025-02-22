@@ -35,6 +35,7 @@ const SEARCHES = [
 
 const VIDEOS = [
   'files/media/gratulacje.mp4',
+  'files/media/bed_1.mp4',
   'files/media/W0jtini.mov'
 ]
 
