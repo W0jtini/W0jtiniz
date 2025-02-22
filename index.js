@@ -40,7 +40,7 @@ const VIDEOS = [
 ]
 
 const FILE_DOWNLOADS = [
-  'files/media/W0jtini.mov'
+  'files/media/gratulacje.mp4',
   'files/media/W0jtini.mov',
   'files/media/Bed_1.mp4'
 ]
