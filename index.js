@@ -35,14 +35,11 @@ const SEARCHES = [
 
 const VIDEOS = [
   'files/media/gratulacje.mp4',
-  'files/media/W0jtini.mov',
-  'files/media/Bed_1.mp4'
+  'files/media/W0jtini.mov'
 ]
 
 const FILE_DOWNLOADS = [
-  'files/media/gratulacje.mp4',
-  'files/media/W0jtini.mov',
-  'files/media/Bed_1.mp4'
+  'files/media/W0jtini.mov'
 ]
 
 const PHRASES = [
