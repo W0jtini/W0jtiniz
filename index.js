@@ -71,25 +71,13 @@ const LOGOUT_SITES = {
   Yahoo: ['GET', 'https://login.yahoo.com/config/login?.src=fpctx&logout=1&.direct=1&.done=https://www.yahoo.com/'],
   YouTube: ['POST', 'https://www.youtube.com', { action_logout: '1' }],
   JShop: ['GET', 'https://jshop.partners/panel/logout'],
-  Vimeo: ['GET', 'https://vimeo.com/log_out'], // added by @intexpression
-  Tumblr: ['GET', 'https://www.tumblr.com/logout'], // added by @intexpression
-  Allegro: ['GET', 'https://allegro.pl/wyloguj?origin_url=/'], // added by @intexpression
+  Vimeo: ['GET', 'https://vimeo.com/log_out'],
+  Tumblr: ['GET', 'https://www.tumblr.com/logout'],
+  Allegro: ['GET', 'https://allegro.pl/wyloguj?origin_url=/'],
   OnetMail: ['GET', 'https://authorisation.grupaonet.pl/logout.html?state=logout&client_id=poczta.onet.pl.front.onetapi.pl'], // added by @intexpression
-  InteriaMail: ['GET', 'https://poczta.interia.pl/logowanie/sso/logout'], // added by @intexpression
-  OLX: ['GET', 'https://www.olx.pl/account/logout'], // added by @intexpression
-  Roblox:  ['POST', 'https://auth.roblox.com/v2/logout'], // added by @cryblanka
-  ChatGPT: ['GET', 'https://chatgpt.com/auth/logout'], // added by @cryblanka
-  Guilded:  ['POST', 'https://www.guilded.gg/api/logout'], // added by @cryblanka
-  LinkedIn: ['GET', 'https://www.linkedin.com/m/logout/'], // added by @MARECKIyt
-  Pinterest: ['GET', 'https://www.pinterest.com/logout/'], // added by @MARECKIyt
-  Reddit: ['GET', 'https://www.reddit.com/logout'], // added by @MARECKIyt
-  Spotify: ['GET', 'https://www.spotify.com/logout/'], // added by @MARECKIyt
-  Microsoft: ['GET', 'https://login.microsoftonline.com/common/oauth2/logout'], // added by @MARECKIyt
-  Instagram: ['GET', 'https://www.instagram.com/accounts/logout/'], // added by @MARECKIyt
-  Trello: ['GET', 'https://trello.com/logout'], // added by @MARECKIyt
-  Baidu: ['GET', 'https://passport.baidu.com/?logout'], // added by @MARECKIyt
-  VK: ['GET', 'https://vk.com/exit'], // added by @MARECKIyt
-  StackOverflow: ['GET', 'https://stackoverflow.com/users/logout'] // added by @MARECKIyt
+  InteriaMail: ['GET', 'https://poczta.interia.pl/logowanie/sso/logout'],
+  OLX: ['GET', 'https://www.olx.pl/account/logout'],
+  Roblox:  ['POST', 'https://auth.roblox.com/v2/logout']
 }
 
 const wins = []
